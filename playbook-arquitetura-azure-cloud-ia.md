@@ -503,55 +503,6 @@ Se você está começando agora, siga esta ordem:
 
 ---
 
-# 13) Template rápido de diagnóstico
-
-Copie e preencha:
-
-## Nome do workload
-`[preencher]`
-
-## Objetivo de negócio
-`[preencher]`
-
-## Criticidade
-- [ ] Baixa
-- [ ] Média
-- [ ] Alta
-
-## Requisitos regulatórios
-`[preencher]`
-
-## Necessidade de escala
-- [ ] Baixa
-- [ ] Média
-- [ ] Alta
-
-## Dependência de legado
-- [ ] Baixa
-- [ ] Média
-- [ ] Alta
-
-## Capacidade operacional do time
-- [ ] Baixa
-- [ ] Média
-- [ ] Alta
-
-## Melhor tipo de cloud
-- [ ] Pública
-- [ ] Privada
-- [ ] Híbrida
-- [ ] Multicloud
-
-## Melhor modelo de serviço
-- [ ] IaaS
-- [ ] PaaS
-- [ ] SaaS
-
-## Justificativa da decisão
-`[preencher]`
-
----
-
 # Conclusão
 
 Escolher arquitetura cloud não é sobre seguir tendência.
@@ -565,15 +516,3 @@ Escolher arquitetura cloud não é sobre seguir tendência.
 - capacidade de evolução
 
 Quando essa decisão é bem feita, cloud deixa de ser um centro de custo técnico e passa a ser uma alavanca real de crescimento.
-
----
-
-## Versão curta para compartilhar junto com o material
-
-Este playbook foi criado para ajudar profissionais e empresas a escolherem a arquitetura certa entre modelos de nuvem e serviços em cloud, com foco em resultado, escalabilidade, segurança e preparo para IA.
-
----
-
-## Sugestão de nome do arquivo
-
-`playbook-arquitetura-azure-cloud-ia.md`

@@ -12,7 +12,7 @@ A ideia é boa. O potencial também.
 
 Mas, na prática, o cenário costuma ser outro:
 
-- dados espalhados entre **Lakehouse**, **SQL Analytics Endpoint**, bancos, blobs, Google Analytics e conectores diversos  
+- dados espalhados entre [Lakehouse](https://learn.microsoft.com/pt-br/fabric/data-engineering/lakehouse-sql-analytics-endpoint), [SQL Analytics Endpoint](https://learn.microsoft.com/pt-br/fabric/data-engineering/lakehouse-sql-analytics-endpoint), bancos, [Azure Blob Storage](https://learn.microsoft.com/pt-br/azure/storage/blobs/), [Google Analytics](https://developers.google.com/analytics/devguides/collection/ga4) e conectores diversos
 - preocupação com **autenticação**, **credenciais** e **segurança**
 - necessidade de **monitoramento contínuo** para garantir operação estável
 - múltiplas fontes e modelos sem uma camada clara de **orquestração**
@@ -25,61 +25,63 @@ Ou seja:
 Essa abordagem chama atenção porque organiza a IA em camadas que fazem sentido para o negócio e para a operação.
 
 ### 1. Canal de interação com o usuário
-O **Microsoft Teams** funciona como ponto de contato principal.
+O [Microsoft Teams](https://learn.microsoft.com/en-us/office365/servicedescriptions/teams-service-description) funciona como ponto de contato principal.
 
 Isso reduz atrito e leva a IA para o ambiente onde o usuário já trabalha.
 
 ### 2. Orquestração da experiência
-O **Azure Bot Services** junto com o **Microsoft Agent Framework** cria a camada de coordenação da conversa, das ações e do contexto.
+O [Azure AI Bot Service](https://learn.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0) junto com o [Microsoft Agent Framework](https://learn.microsoft.com/en-us/agent-framework/) cria a camada de coordenação da conversa, das ações e do contexto.
 
 É aqui que o agente deixa de ser apenas um chat e passa a ser um sistema capaz de executar fluxos com inteligência.
 
 ### 3. Capacidades avançadas
 O agente pode ser enriquecido com recursos como:
 
-- **Memory Storage**
-- **Code Interpreter**
+- [Memory & Persistence](https://learn.microsoft.com/pt-br/agent-framework/get-started/memory)
+- [Code Interpreter](https://learn.microsoft.com/pt-br/azure/foundry/agents/how-to/tools/code-interpreter)
 
 Essas capacidades aumentam a personalização, a persistência de contexto e a capacidade analítica do agente.
 
 ### 4. Inteligência com múltiplos LLMs
-A arquitetura usa o **Microsoft Foundry** como camada de integração com diferentes modelos, como:
+A arquitetura usa o [Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/) como camada de integração com diferentes modelos.
 
-- OpenAI
-- Meta
-- Anthropic
-- Microsoft
-- DeepSeek
-- Mistral AI
+Exemplos de fornecedores citados na arquitetura:
+
+- [OpenAI](https://developers.openai.com/api/docs/)
+- [Meta Llama](https://www.llama.com/docs/overview/)
+- [Anthropic](https://platform.claude.com/docs/en/api/overview)
+- [Microsoft Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/model-catalog-overview)
+- [DeepSeek](https://api-docs.deepseek.com/)
+- [Mistral AI](https://docs.mistral.ai/)
 
 Isso traz flexibilidade para escolher o modelo mais adequado conforme custo, performance, governança ou caso de uso.
 
 ### 5. Dados e analytics com Microsoft Fabric
-O **Microsoft Fabric** centraliza a base analítica da solução com componentes como:
+O [Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/) centraliza a base analítica da solução com componentes como:
 
-- **Dataflow Gen2**
-- **Lakehouse**
-- **SQL Analytics Endpoint**
-- **ML Model**
-- **Notebook**
+- [Dataflow Gen2](https://learn.microsoft.com/en-us/fabric/data-factory/create-first-dataflow-gen2)
+- [Lakehouse](https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-overview)
+- [SQL Analytics Endpoint](https://learn.microsoft.com/pt-br/fabric/data-engineering/lakehouse-sql-analytics-endpoint)
+- [ML Model](https://learn.microsoft.com/pt-br/fabric/data-science/machine-learning-model)
+- [Notebook](https://learn.microsoft.com/pt-br/fabric/data-engineering/how-to-use-notebook)
 
 Além disso, conecta diferentes origens, como:
 
-- Azure Databricks
-- Azure Cosmos DB
-- Azure Synapse Analytics
-- Azure AI Search
-- Blobs do Azure
-- Google Analytics
-- OData
-- ODBC
+- [Azure Databricks](https://learn.microsoft.com/pt-br/azure/databricks/)
+- [Azure Cosmos DB](https://learn.microsoft.com/pt-br/azure/cosmos-db/)
+- [Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/synapse-analytics/)
+- [Azure AI Search](https://learn.microsoft.com/pt-br/azure/search/)
+- [Azure Blob Storage](https://learn.microsoft.com/pt-br/azure/storage/blobs/)
+- [Google Analytics](https://developers.google.com/analytics/devguides/collection/ga4)
+- [OData](https://learn.microsoft.com/pt-br/odata/)
+- [ODBC](https://learn.microsoft.com/en-us/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-ver17)
 
 ### 6. Segurança e governança
 A sustentação corporativa depende de pilares como:
 
-- **Microsoft Entra ID** para autenticação
-- **Azure Key Vault** para armazenamento seguro de credenciais
-- **Monitoramento e Alertas** para observabilidade e continuidade operacional
+- [Microsoft Entra ID](https://learn.microsoft.com/pt-br/entra/identity/) para autenticação
+- [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/) para armazenamento seguro de credenciais
+- [Azure Monitor](https://learn.microsoft.com/pt-br/azure/azure-monitor/) para observabilidade, monitoramento e alertas
 
 ## O ganho não é só técnico
 
@@ -94,7 +96,7 @@ O impacto maior está no negócio.
 
 ## Exemplo realista
 
-Em vez de abrir 5 ferramentas diferentes, um líder pode perguntar no **Teams**:
+Em vez de abrir 5 ferramentas diferentes, um líder pode perguntar no [Microsoft Teams](https://learn.microsoft.com/en-us/office365/servicedescriptions/teams-service-description):
 
 - como está a performance da operação
 - quais riscos exigem atenção
